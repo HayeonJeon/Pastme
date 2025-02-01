@@ -4,7 +4,7 @@ import os
 import openai
 
 # API 키 불러오기
-openai_api_key = st.secrets["api_keys"]["openai_api_key"]
+openai_api_key = st.secrets["openai_api_key"]
 os.environ["OPENAI_API_KEY"] = openai_api_key
 
 from gpt_structure import dd_generate_gpt4_basic
