@@ -2,8 +2,7 @@ import json
 import openai
 
 def dd_generate_gpt4_basic(system_prompt, knowledge, user_prompt):
-    #completion = openai.chat.completions.create(
-    completion = openai.ChatCompletion.create(
+    completion = openai.chat.completions.create(
         model = 'gpt-4o',
         messages = [
             {'role': 'system', 'content': system_prompt},
@@ -18,8 +17,7 @@ def pvq_summary_gpt4(summary):
     f = open(system_lib_file, "r")
     sys_prompt = f.read()
     f.close()
-    #completion = openai.chat.completions.create(
-    completion = openai.ChatCompletion.create(
+    completion = openai.chat.completions.create(
         model = 'gpt-4o',
         messages = [
             {'role': 'system', 'content': sys_prompt},
@@ -33,8 +31,7 @@ def bfi_summary_gpt4(summary):
     f = open(system_lib_file, "r")
     sys_prompt = f.read()
     f.close()
-    #completion = openai.chat.completions.create(
-    completion = openai.ChatCompletion.create(
+    completion = openai.chat.completions.create(
         model = 'gpt-4o',
         messages = [
             {'role': 'system', 'content': sys_prompt},
