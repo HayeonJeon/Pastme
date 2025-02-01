@@ -2,7 +2,7 @@ def pvq_calculate_scores(data):
     pvq_scoring = {
         'Conformity': ['D2LP-1'],
         'Tradition': ['D2LP-2'],
-        'Benevolence': ['D2LP-3']
+        'Benevolence': ['D2LP-3'],
         'Universalism': ['D2LP-4'],
         'Self-Direction': ['D2LP-5'],
         'Stimulation': ['D2LP-6'],
