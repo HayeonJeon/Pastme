@@ -31,7 +31,7 @@ def demo_generate(main_test):
   )
   return demo
 
-def bfi_generate(main_test):
+def bfi_generate(main_test, client):
   bfi_intro = '''
 
 **[Big 5 Personality Traits in 2025]**
@@ -42,11 +42,11 @@ The following section presents an overview of the person's personality within fi
   bfi_raw = main_test.iloc[:, 22:52]
   bfi_raw.columns = new_column_names
   bfi_1st = bfi_calculate_scores(bfi_raw)
-  bfi_summary = bfi_summary_gpt4(bfi_1st)
+  bfi_summary = bfi_summary_gpt4(bfi_1st, client)
   bfi_summary_final = bfi_intro + bfi_summary
   return bfi_summary_final
 
-def pvq_generate(main_test):
+def pvq_generate(main_test, client):
   pvq_intro = '''
 
 **[Life-guiding Principles in 2025]**
@@ -57,7 +57,7 @@ The information provided below is the values that reflect the relative importanc
   pvq_raw = main_test.iloc[:, 52:62]
   pvq_raw.columns = new_column_names
   pvq_1st = generate_pvq_prompt(pvq_raw)
-  pvq_summary = pvq_summary_gpt4(pvq_1st)
+  pvq_summary = pvq_summary_gpt4(pvq_1st, client)
   pvq_summary_final = pvq_intro + pvq_summary
   return pvq_summary_final
 

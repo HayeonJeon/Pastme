@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import os
 import openai
+from openai import OpenAI
 
 # API 키 불러오기
 openai_api_key = st.secrets["api_keys"]["openai_api_key"]
 os.environ["OPENAI_API_KEY"] = openai_api_key
+
+client = OpenAI(api_key = openai_api_key,)
 
 from gpt_structure import dd_generate_gpt4_basic
 from knowledge_structure import *
@@ -58,8 +61,8 @@ if submit:
  
   with st.spinner('Wait for it...'):
     demo = demo_generate(main_test)
-    bfi = bfi_generate(main_test)
-    pvq = pvq_generate(main_test)
+    bfi = bfi_generate(main_test, client)
+    pvq = pvq_generate(main_test, client)
  
     knowledge += demo
     knowledge += "\n"
