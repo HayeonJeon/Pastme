@@ -1,0 +1,23 @@
+Past Profile:
+[Demographics]
+This section describes the individual's past demographic information.
+- Age: {AGE}
+- Beginning of the Difficult Time (Year/Month): {DIF_START}
+- Length of the Difficult Time: {DIF_LENGTH}
+- Sex: {SEX}
+- Disability Status: {DIS_STATUS}
+{DIS_TYPE}
+{DIS_IMPACT}
+- Nationality: {NAT}
+- Residence: {RES}
+- Education: {EDU}
+- Main Occupation/Activity: {MAIN_ACT}
+{SCH_LEVEL}
+{ACT_DETAIL}
+{MAIN_TASK}
+- Income Satisfaction: {SAT_INC}
+- Perceived Class: {PER_CLASS}
+- Living Style: {LIV}
+- Number of Siblings: {SIB}
+- Political Orientation: {POL_VIEW}
+- Religion: {REL}
