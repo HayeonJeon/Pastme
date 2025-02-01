@@ -64,7 +64,7 @@ if submit:
     bfi = bfi_generate(main_test, client)
     pvq = pvq_generate(main_test, client)
  
-    knowledge += demo
+    knowledge = demo
     knowledge += "\n"
     knowledge += bfi
     knowledge += "\n"
