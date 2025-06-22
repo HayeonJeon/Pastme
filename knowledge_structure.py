@@ -2,6 +2,60 @@ from pvq_scoring import *
 from bfi_scoring import *
 from gpt_structure import pvq_summary_gpt4, bfi_summary_gpt4
 
+def past_profile_generate(main_test):
+  lib_file = './data/prompt_template/past_profile.txt'
+  f = open(lib_file, "r")
+  past_profile_template = f.read()
+  f.close()
+  past_profile = past_profile_template(
+    MAIN_DIFFICULTIES = main_test.iloc[0,62],
+    BIGGEST_WORRY = main_test.iloc[0,63],
+    EMOTIONAL_MENTAL_STATE = main_test.iloc[0,64],
+    DAILY_LIFE_ENVIRONMENT = main_test.iloc[0,65],
+    FAMILY_RELATIONSHIPS = main_test.iloc[0,66],
+    SUPPORT_OR_COPING = main_test.iloc[0,67],
+    INTERESTS_HOBBIES_EFFORTS = main_test.iloc[0,68],
+  )
+  return past_profile
+ 
+def daily_life_generate(main_test):
+  lib_file = './data/prompt_template/daily_life.txt'
+  f = open(lib_file, "r")
+  daily_life_template = f.read()
+  f.close()
+  daily_life = daily_life_template.format(
+    WEEKDAYS = main_test.iloc[0,75],
+    WEEKENDS = main_test.iloc[0,76],
+  )
+  return daily_life
+
+def past_letter_generate(main_test):
+  lib_file = './data/prompt_template/past_letter.txt'
+  f = open(lib_file, "r")
+  past_letter_template = f.read()
+  f.close()
+  past_letter = past_letter_template.format(
+    LETTER = main_test.iloc[0,77],
+  )
+  return past_letter
+
+
+def love_hate_generate(main_test):
+  lib_file = './data/prompt_template/love_hate.txt'
+  f = open(lib_file, "r")
+  love_hate_template = f.read()
+  f.close()
+  love_hate = love_hate_template.format(
+    LOVE1 = main_test.iloc[0,69],
+    LOVE2 = main_test.iloc[0,70],
+    LOVE3 = main_test.iloc[0,71],
+    HATE1 = main_test.iloc[0,72],
+    HATE2 = main_test.iloc[0,73],
+    HATE3 = main_test.iloc[0,74],
+  )
+  return love_hate
+
+
 def demo_generate(main_test):
   lib_file = './data/prompt_template/demo.txt'
   f = open(lib_file, "r")

@@ -63,13 +63,28 @@ if submit:
     demo = demo_generate(main_test)
     bfi = bfi_generate(main_test, client)
     pvq = pvq_generate(main_test, client)
+    past_profile = past_profile_generate(main_test)
+    daily_life = daily_life_generate(main_test)
+    past_letter = past_letter_generate(main_test)
+    
  
     knowledge = demo
     knowledge += "\n"
     knowledge += bfi
     knowledge += "\n"
     knowledge += pvq
+    knowledge += "\n"	
+    knowledge += past_profile
     knowledge += "\n"
+    knowledge += love_hate
+    knowledge += "\n"
+    #knowledge += "\n"
+    knowledge += daily_life
+    knowledge += "\n"
+    knowledge += past_letter
+    #knowledge += "\n"
+    
+    
 
     st.subheader("Knowledge")
     st.write(knowledge)
