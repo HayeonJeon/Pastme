@@ -7,7 +7,7 @@ def past_profile_generate(main_test):
   f = open(lib_file, "r")
   past_profile_template = f.read()
   f.close()
-  past_profile = past_profile_template(
+  past_profile = past_profile_template.format(
     MAIN_DIFFICULTIES = main_test.iloc[0,62],
     BIGGEST_WORRY = main_test.iloc[0,63],
     EMOTIONAL_MENTAL_STATE = main_test.iloc[0,64],
