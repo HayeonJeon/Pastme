@@ -79,7 +79,6 @@ if submit:
     knowledge += "\n"
     knowledge += love_hate
     knowledge += "\n"
-    #knowledge += "\n"
     knowledge += daily_life
     knowledge += "\n"
     knowledge += past_letter
