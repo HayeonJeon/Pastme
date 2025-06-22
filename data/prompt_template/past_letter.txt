@@ -1,2 +1,2 @@
 [Letter to my past self from that time]
-- {LETTER}
+{LETTER}

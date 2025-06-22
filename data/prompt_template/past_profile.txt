@@ -1,4 +1,4 @@
-Past Self Profile): 
+[Past Self Profile] 
 - 이 시기에 겪고 있던 주된 어려움들: {MAIN_DIFFICULTIES}
 - 그 중에서 가장 힘들게 했던 걱정거리: {BIGGEST_WORRY}
 - 당시의 주된 감정과 심리상태: {EMOTIONAL_MENTAL_STATE}
