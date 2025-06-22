@@ -1,0 +1,9 @@
+[Top 3 Things this person loves in the past]
+- {LOVE1}
+- {LOVE2}
+- {LOVE3}
+
+[Top 3 Things this person hates in the past]
+- {HATE1}
+- {HATE2}
+- {HATE3}

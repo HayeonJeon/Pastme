@@ -1,0 +1,3 @@
+[My daily life during my most difficult time]
+- 1. {WEEKDAYS}
+- 2. {WEEKENDS}
