@@ -64,6 +64,7 @@ if submit:
     bfi = bfi_generate(main_test, client)
     pvq = pvq_generate(main_test, client)
     past_profile = past_profile_generate(main_test)
+    love_hate = love_hate_generate(main_test)
     daily_life = daily_life_generate(main_test)
     past_letter = past_letter_generate(main_test)
     
