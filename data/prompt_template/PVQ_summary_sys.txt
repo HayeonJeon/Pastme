@@ -12,3 +12,4 @@ Guidelines:
 - Make space with fusion, compression, and removal of uninformative phrases like "the report discusses".
 - The summaries should become highly dense and concise yet self-contained, i.e., easily understood without the article.
 - Before each response, specify which Step it is (e.g. Step 1:).
+
