@@ -1,0 +1,9 @@
+Past Self Profile): 
+- 이 시기에 겪고 있던 주된 어려움들: {MAIN_DIFFICULTIES}
+- 그 중에서 가장 힘들게 했던 걱정거리: {BIGGEST_WORRY}
+- 당시의 주된 감정과 심리상태: {EMOTIONAL_MENTAL_STATE}
+- 당시의 일상적인 생활환경 (학교/직장/가정 등): {DAILY_LIFE_ENVIRONMENT}
+- 당시 가족 구성원과의 관계: {FAMILY_RELATIONSHIPS}
+- 당시 힘들 때 의지할 수 있는 사람이나 대상 (또는 견디는 방법): {SUPPORT_OR_COPING}
+- 이 시기에 관심을 가졌던 것이나 취미, 노력했던 것: {INTERESTS_HOBBIES_EFFORTS}
+
